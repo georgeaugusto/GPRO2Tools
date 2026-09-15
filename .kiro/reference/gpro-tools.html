@@ -1,0 +1,1266 @@
+<html lang="cs-cz"><head>
+	<title>Configuração Total | GPRO-tools</title>
+	<base href="/">
+	<meta charset="UTF-8">
+	<meta name="description" content="Configuração do carro + Consumo de combustível + Desgaste dos pneus + Desgaste do carro + Estratégia (Ferramenta para detectar a melhor estratégia para a corrida)">
+	<meta name="theme-color" content="#0000FF">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="Shortcut Icon" type="image/ico" href="/favicon.ico">
+	<link rel="icon" href="/images/favicon.ico">
+	<link rel="stylesheet" href="assets/css/style-all.css?v=496160389" type="text/css">
+	<link rel="preload" href="/assets/fonts/icon-font.woff2?v=1786177456146" as="font" crossorigin="anonymous">
+	<link rel="alternate" hreflang="x-default" href="https://gpro-tools.eu/en/total-setup">
+	<link rel="alternate" hreflang="en-GB" href="https://gpro-tools.eu/en/total-setup">
+	<link rel="alternate" hreflang="en-US" href="https://gpro-tools.eu/en/total-setup">
+	<link rel="alternate" hreflang="de-DE" href="https://gpro-tools.eu/de/total-setup">
+	<link rel="alternate" hreflang="cs-CZ" href="https://gpro-tools.eu/cz/total-setup">
+	<link rel="alternate" hreflang="pl-PL" href="https://gpro-tools.eu/pl/total-setup">
+	<link rel="alternate" hreflang="es-ES" href="https://gpro-tools.eu/es/total-setup">
+	<link rel="alternate" hreflang="ru-RU" href="https://gpro-tools.eu/ru/total-setup">
+	<link rel="alternate" hreflang="hu-HU" href="https://gpro-tools.eu/hu/total-setup">
+	<link rel="alternate" hreflang="ee-EE" href="https://gpro-tools.eu/ee/total-setup">
+	<link rel="alternate" hreflang="hr-HR" href="https://gpro-tools.eu/hr/total-setup">
+	<link rel="alternate" hreflang="fr-FR" href="https://gpro-tools.eu/fr/total-setup">
+	<link rel="alternate" hreflang="it-IT" href="https://gpro-tools.eu/it/total-setup">
+	<link rel="alternate" hreflang="el-GR" href="https://gpro-tools.eu/gr/total-setup">
+	<link rel="alternate" hreflang="pt-PT" href="https://gpro-tools.eu/pt/total-setup">
+	<link rel="alternate" hreflang="pt-BR" href="https://gpro-tools.eu/pt/total-setup">
+	<link rel="alternate" hreflang="ro-RO" href="https://gpro-tools.eu/ro/total-setup">
+	
+				<!-- Global site tag (ga.js) - Google Analytics -->
+				<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-22MJEBGLNW&amp;cx=c&amp;_slc=1"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>
+					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+					ga('create', 'UA-67936510-1', 'auto');
+					ga('send', 'pageview');
+				</script>
+				<!-- End Global site tag (ga.js) - Google Analytics -->
+	
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-J9PGMCGWCW"></script>
+				<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+
+					gtag('config', 'G-J9PGMCGWCW', {'user_id': '15900'});
+					
+				</script>
+			<!-- End Global site tag (gtag.js) - Google Analytics -->
+</head>
+
+<body data-token="bsuj4a18xNl0UieN|JnWf1H7_17M8LP9Xbx0lfQ..|ybFfhsHZeDhvyjRk7vDAKwTxnHqS2Kw2NnuzafEUqfu2YFerEjFWhe0UQk266OFe_fWHWXJSizNQc6sq-ECMk-yUnYUy" data-source="total-setup">
+
+
+<header class="header">
+	<div class="header__left">
+				<div class="header__points">
+					153
+				</div>
+
+			<div class="vip-activate vip-activate--can-shrink" data-show="unlocked"></div>
+	</div>
+	<div class="header__right">
+				<label for="modal-api-download-opened" class="header__button header__button--api-download" data-highlight-type="ok" title="Descarregamento de dados GPRO"></label>
+		<label for="modal-languages-opened" class="header__button header__button--lang " data-lang="pt"></label>
+		<label for="nav-opened" class="header__button nav-header-toggle-button"></label>
+	</div>
+</header>
+
+	<div class="race-time-percentage">
+		<div class="race-time-percentage__child race-time-percentage__child--warning" style="width: 17.05%;"></div>
+	</div>
+
+
+
+
+
+
+<input class="nav-checkbox" type="checkbox" id="nav-opened">
+
+	<nav class="nav">
+
+		<div class="nav__header">
+			<label for="nav-opened" class="nav__toggle-button"></label>
+		</div>
+		<div class="nav__content">
+			<div class="nav__top-content">
+
+	<a href="/pt/main" class="nav__item  " data-icon="home">
+		Principal
+	</a>
+	<a href="/pt/total-setup" class="nav__item  nav__item--active" data-icon="totalSetup">
+		Configuração Total
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/money-plan" class="nav__item  " data-icon="money">
+		Plano de dinheiro
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<div class="nav-group ">
+
+
+			<input class="nav-group__checkbox" type="checkbox" id="nav-group-N_VIP-61">
+		<label class="nav-group__label" for="nav-group-N_VIP-61">
+			VIP
+		</label>
+		<div class="nav-group__content nav-group__content--h-12">
+	<a href="/pt/car-setup" class="nav__item  " data-icon="carSetup">
+		Configuração do carro
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/car-setup-change" class="nav__item  " data-icon="carSetup">
+		Mudança de configuração do carro
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/fuel-consumption" class="nav__item  " data-icon="fuel">
+		Consumo de combustível
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/tyre-wear" class="nav__item  " data-icon="tyreWear">
+		Desgaste dos pneus
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/car-wear" class="nav__item  " data-icon="carWear">
+		Desgaste do carro
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/car-wear-plan" class="nav__item  " data-icon="carWear">
+		Plano de desgaste do carro
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/wing-split" class="nav__item  " data-icon="wingSplit">
+		Divisão de asa
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/driver-energy" class="nav__item  " data-icon="driverEnergy">
+		Energia do piloto
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/sponsors" class="nav__item  " data-icon="sponsorAsk">
+		Patrocinadores
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/weather-analysis" class="nav__item  " data-icon="weather">
+		Análise do tempo
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/weather-forecast" class="nav__item  " data-icon="weather">
+		Previsão de Tempo
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+	<a href="/pt/driver-info" class="nav__item  " data-icon="driver">
+		Informações do piloto
+			<div class="nav__item-vip nav__item-vip--unlock"></div>
+	</a>
+		</div>
+	</div>
+	<div class="nav-group ">
+
+
+			<input class="nav-group__checkbox" type="checkbox" id="nav-group-N_FAVORITES-832">
+		<label class="nav-group__label" for="nav-group-N_FAVORITES-832">
+			Favoritos
+		</label>
+		<div class="nav-group__content nav-group__content--h-2">
+	<a href="/pt/drivers-market" class="nav__item  " data-icon="driver">
+		Mercado de pilotos
+	</a>
+	<a href="/pt/tds-market" class="nav__item  " data-icon="technicalDirector">
+		Mercado de diretores técnicos
+	</a>
+		</div>
+	</div>
+	<div class="nav-group ">
+
+
+			<input class="nav-group__checkbox" type="checkbox" id="nav-group-N_OTHER-614">
+		<label class="nav-group__label" for="nav-group-N_OTHER-614">
+			De outros
+		</label>
+		<div class="nav-group__content nav-group__content--h-8">
+	<a href="/pt/setup-calculator" class="nav__item  " data-icon="carSetup">
+		Calculadora de configuração
+	</a>
+	<a href="/pt/driver-oa" class="nav__item  " data-icon="driverOA">
+		Perfil do piloto + Treino
+	</a>
+	<a href="/pt/car-cost" class="nav__item  " data-icon="car">
+		Carro custo + PMA
+	</a>
+	<a href="/pt/strategy-free" class="nav__item  " data-icon="strategyFree">
+		Estratégia livre
+	</a>
+	<a href="/pt/money" class="nav__item  " data-icon="money">
+		Dinheiro
+	</a>
+	<a href="/pt/season-calendar" class="nav__item  " data-icon="seasonCalendar">
+		Calendário da época
+	</a>
+	<a href="/pt/car-testing" class="nav__item  " data-icon="carTesting">
+		Pontos de teste
+	</a>
+	<a href="/pt/tyre-suppliers" class="nav__item  " data-icon="tyreSuppliers">
+		Fornecedores de pneus
+	</a>
+		</div>
+	</div>
+			</div>
+			<div class="nav__bottom-content">
+	<a href="/pt/account-settings" class="nav__item  " data-icon="accountSettings">
+		Configurações da Conta
+	</a>
+	<a href="/pt/software" class="nav__item  " data-icon="software">
+		Descarregamento de dados GPRO
+	</a>
+	<a href="/pt/contact" class="nav__item  " data-icon="contact">
+		Contato
+	</a>
+	<a href="/pt/action/logout" class="nav__item  " data-icon="signOut">
+		Sair
+	</a>
+			</div>
+		</div>
+	</nav>
+
+<label class="nav-overlay" for="nav-opened"></label>
+
+
+
+<main>
+
+<div class="modal modal--card">
+	<input class="modal__checkbox" type="checkbox" id="modal-languages-opened">
+	<label class="modal__overlay" for="modal-languages-opened"></label>
+	<div class="modal__body">
+		<div class="modal__header">
+			<div class="modal__caption" data-icon="langs">línguas (Português)</div>
+			<label class="modal__close" for="modal-languages-opened"></label>
+		</div>
+		<div class="modal__content modal__content--bg modal__content--small text-center p-4">
+				<a href="/en/total-setup" class="btn btn--primary m-2">English</a>
+				<a href="/de/total-setup" class="btn btn--secondary m-2">Deutsch</a>
+				<a href="/cz/total-setup" class="btn btn--secondary m-2">Čeština</a>
+				<a href="/pl/total-setup" class="btn btn--secondary m-2">Polski</a>
+				<a href="/es/total-setup" class="btn btn--secondary m-2">Español</a>
+				<a href="/ru/total-setup" class="btn btn--secondary m-2">Русский язык</a>
+				<a href="/hu/total-setup" class="btn btn--secondary m-2">Magyar</a>
+				<a href="/ee/total-setup" class="btn btn--secondary m-2">Eesti keel</a>
+				<a href="/hr/total-setup" class="btn btn--secondary m-2">Hrvatski</a>
+				<a href="/fr/total-setup" class="btn btn--secondary m-2">Français</a>
+				<a href="/it/total-setup" class="btn btn--secondary m-2">Italiano</a>
+				<a href="/gr/total-setup" class="btn btn--secondary m-2">Ελληνικά</a>
+				<a href="/pt/total-setup" class="btn btn--primary m-2">Português</a>
+				<a href="/ro/total-setup" class="btn btn--secondary m-2">Română</a>
+		</div>
+	</div>
+</div>	<div class="modal modal--card">
+		<input class="modal__checkbox" type="checkbox" id="modal-api-download-opened">
+		<label class="modal__overlay" for="modal-api-download-opened"></label>
+		<div class="modal__body">
+			<div class="modal__header">
+				<div class="modal__caption" data-icon="apiDownload">Descarregamento de dados GPRO</div>
+				<label class="modal__close" for="modal-api-download-opened"></label>
+			</div>
+			<div class="modal__content">
+				<div class="row">
+					<div class="col-12 col-xl-6">
+						<table class="table table--primary table--form">
+							<tbody>
+									<tr>
+										<td>
+												<div>Piloto</div>
+												<div>Carro</div>
+												<div>Equipa &amp; Instalações</div>
+										</td>
+										<td class="table__input">
+											<form action="/pt/software/api-download/run-api-download" method="post" class="submitFormApiDownload">
+												<input type="hidden" name="spamBot" value="hbnJ6b2">
+												<input type="hidden" name="thisUrl" value="/pt/total-setup">
+													<input type="hidden" name="parts[driver]" value="driver">
+													<input type="hidden" name="parts[car]" value="car">
+													<input type="hidden" name="parts[staffAndFacility]" value="staffAndFacility">
+												<button class="btn btn--primary btn--sm" type="submit">Descarregar tudo</button>
+											</form>
+										</td>
+									</tr>
+									<tr>
+										<td>
+												<div>Piloto</div>
+												<div>Carro</div>
+										</td>
+										<td class="table__input">
+											<form action="/pt/software/api-download/run-api-download" method="post" class="submitFormApiDownload">
+												<input type="hidden" name="spamBot" value="hbnJ6b2">
+												<input type="hidden" name="thisUrl" value="/pt/total-setup">
+													<input type="hidden" name="parts[driver]" value="driver">
+													<input type="hidden" name="parts[car]" value="car">
+												<button class="btn btn--secondary btn--sm" type="submit">Atualizar condutor + automóvel</button>
+											</form>
+										</td>
+									</tr>
+									<tr>
+										<td>
+												<div>Informações básicas</div>
+										</td>
+										<td class="table__input">
+											<form action="/pt/software/api-download/run-api-download" method="post" class="submitFormApiDownload">
+												<input type="hidden" name="spamBot" value="hbnJ6b2">
+												<input type="hidden" name="thisUrl" value="/pt/total-setup">
+													<input type="hidden" name="parts[baseInfo]" value="baseInfo">
+												<button class="btn btn--secondary btn--sm" type="submit">Informações básicas</button>
+											</form>
+										</td>
+									</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col-12 col-xl-6 d-flex gap-4 justify-content-center flex-column flex-sm-row apiDownloadContent">
+							<div class="d-flex justify-content-center">
+								<div class="d-flex flex-wrap flex-column gap-6 mt-1 mb-5 p-2">
+										<div class="d-flex align-items-center">
+											<div class="status-icon" data-code="seasonInfo" data-value="complete" data-can-be-loaded="false"></div>
+											<div class="p-1">Informações sobre a estação</div>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="status-icon" data-code="baseInfo" data-value="complete" data-can-be-loaded="false"></div>
+											<div class="p-1">Informações básicas</div>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="status-icon" data-code="raceAnalysis" data-value="complete" data-can-be-loaded="false"></div>
+											<div class="p-1">Análise da corrida</div>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="status-icon" data-code="sponsors" data-value="complete" data-can-be-loaded="false"></div>
+											<div class="p-1">Patrocinadores</div>
+										</div>
+								</div>
+							</div>
+							<div class="d-flex justify-content-center">
+								<div class="d-flex flex-wrap flex-column gap-6 mt-1 mb-5 p-2">
+										<div class="d-flex align-items-center">
+											<div class="status-icon" data-code="driver" data-value="complete" data-can-be-loaded="true"></div>
+											<div class="p-1">Piloto</div>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="status-icon" data-code="car" data-value="complete" data-can-be-loaded="true"></div>
+											<div class="p-1">Carro</div>
+										</div>
+										<div class="d-flex align-items-center">
+											<div class="status-icon" data-code="staffAndFacility" data-value="complete" data-can-be-loaded="true"></div>
+											<div class="p-1">Equipa &amp; Instalações</div>
+										</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mb-2" id="messages">
+	</div>
+
+		<div class="title title--center title--underlined">
+			Configuração Total
+		</div>
+
+
+
+<div class="container">
+
+	<form method="post">
+		<div class="row">
+			<div class="col-12 col-sm-5 col-md-5 col-xl-3 px-2">
+
+<table class="table table--primary table--form">
+	<caption data-icon="driver">Piloto</caption>
+	<tbody>
+			<tr>
+				<td class="table__input" colspan="9">
+					<button type="button" class="btn btn--secondary btn--sm dataDriverUploadedButton" data-icon="database" data-data="{&quot;concentration&quot;:180,&quot;talent&quot;:88,&quot;aggressiveness&quot;:0,&quot;experience&quot;:72,&quot;technicalInsight&quot;:94,&quot;stamina&quot;:101,&quot;charisma&quot;:113,&quot;motivation&quot;:176,&quot;reputation&quot;:18,&quot;weight&quot;:56}">Carregar do banco de dados</button>
+				</td>
+			</tr>
+				<tr>
+					<th>
+						Concentração
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="concentration" id="driver_concentration" value="61" class="input input--short" tabindex="1" aria-label="Concentração" data-uploaded="180" data-uploaded-ok="">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Talento
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="talent" id="driver_talent" value="202" class="input input--short" tabindex="2" aria-label="Talento" data-uploaded="88" data-uploaded-ok="">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Agressividade
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="aggressiveness" id="driver_aggressiveness" value="0" class="input input--short" tabindex="3" aria-label="Agressividade" data-uploaded="0" data-uploaded-ok="OK">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Experiência
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="experience" id="driver_experience" value="38" class="input input--short" tabindex="4" aria-label="Experiência" data-uploaded="72" data-uploaded-ok="">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Conhecimento Técnico
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="technicalInsight" id="driver_technicalInsight" value="138" class="input input--short" tabindex="5" aria-label="Conhecimento Técnico" data-uploaded="94" data-uploaded-ok="">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Resistência
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="stamina" id="driver_stamina" value="4" class="input input--short" tabindex="6" aria-label="Resistência" data-uploaded="101" data-uploaded-ok="">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Carisma
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="charisma" id="driver_charisma" value="47" class="input input--short" tabindex="7" aria-label="Carisma" data-uploaded="113" data-uploaded-ok="">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Motivação
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="motivation" id="driver_motivation" value="84" class="input input--short" tabindex="8" aria-label="Motivação" data-uploaded="176" data-uploaded-ok="">
+					</td>
+				</tr>
+					<tr>
+						<th colspan="2" class="table__brick table__brick--horizontal"></th>
+					</tr>
+				<tr>
+					<th>
+						Reputação
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="reputation" id="driver_reputation" value="0" class="input input--short" tabindex="9" aria-label="Reputação" data-uploaded="18" data-uploaded-ok="">
+					</td>
+				</tr>
+					<tr>
+						<th colspan="2" class="table__brick table__brick--horizontal"></th>
+					</tr>
+				<tr>
+					<th>
+						Peso
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="weight" id="driver_weight" value="87" class="input input--short" tabindex="10" aria-label="Peso" data-uploaded="56" data-uploaded-ok="">
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Energia do piloto
+					</th>
+					<td class="table__input">
+						<input size="3" type="text" name="energy" id="driver_energy" value="100" class="input input--short" tabindex="11" aria-label="Energia do piloto">
+					</td>
+				</tr>
+	</tbody>
+</table>
+<table class="table table--primary table--form">
+	<caption data-icon="boost">Voltas canhão</caption>
+	<tbody>
+			<tr>
+					<td class="table__input">
+						<input type="text" name="boost1" value="0" class="input input--short" tabindex="12" aria-label="Boost lap boost1">
+					</td>
+					<td class="table__input">
+						<input type="text" name="boost2" value="0" class="input input--short" tabindex="13" aria-label="Boost lap boost2">
+					</td>
+					<td class="table__input">
+						<input type="text" name="boost3" value="0" class="input input--short" tabindex="14" aria-label="Boost lap boost3">
+					</td>
+			</tr>
+			<tr>
+					<td class="text-center">
+						---
+					</td>
+					<td class="text-center">
+						---
+					</td>
+					<td class="text-center">
+						---
+					</td>
+			</tr>
+	</tbody>
+</table>
+<table class="table table--primary table--form">
+	<caption data-icon="tyre">Pneu</caption>
+	<tbody>
+		<tr>
+			<th>Pneu</th>
+			<td class="table__input">
+	<select name="tyreId" class="select" tabindex="15" aria-label="Select list" data-uploaded="1" data-uploaded-ok="OK">
+					<option value="1" class="select__option select__option--favorite" selected="">Pipirelli</option>
+					<option value="2" class="select__option">Avonn</option>
+					<option value="3" class="select__option">Yokomama</option>
+					<option value="4" class="select__option">Dunnolop</option>
+					<option value="5" class="select__option">Contimental</option>
+					<option value="6" class="select__option">Badyear</option>
+					<option value="7" class="select__option">Hancock</option>
+					<option value="8" class="select__option">Michelini</option>
+					<option value="9" class="select__option">Bridgerock</option>
+	</select>
+			</td>
+		</tr>
+			<tr>
+				<th>% Pneu</th>
+				<td class="table__input">
+					<input type="text" name="tyrePercentWear" value="3" class="input input--short" tabindex="16" aria-label="Tyre percent">
+				</td>
+			</tr>
+			<tr>
+				<th>Tempo de Pitstop</th>
+				<td class="table__input">
+					<input type="text" name="pitTime" value="24" class="input input--short" tabindex="17" aria-label="Pit time">
+						+25.5s
+				</td>
+			</tr>
+	</tbody>
+</table><table class="strategy-table">
+	<caption data-icon="strategy">Socorro</caption>
+	<tbody>
+		<tr>
+			<td class="strategy-table__pit-lap">PIT (Volta)</td>
+			<td class="strategy-table__fuel strategy-table--text">
+				<div class="font-weight-bold">Recomendado</div>
+				<small>(Combustível)</small>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="strategy-table__select-laps">
+				<div>
+					<button type="button" class="strategy-table__button" data-stint-id="0" data-tyre="soft" data-change="-1">-</button>
+					<div class="strategy-table__laps">+Voltas</div>
+					<button type="button" class="strategy-table__button" data-stint-id="0" data-tyre="soft" data-change="+1">+</button>
+				</div>
+				<div class="strategy-table__tyre-wear-wrapper">
+					<div class="strategy-table__tyre-compound">
+						<img src="/images/tyre/medium.svg" alt="" width="15" height="15" title="Super macios / Macia / Médio / Difíceis / Chuva">
+					</div>
+						<div class="tyre-wear-v2 mt-2 mb-2" data-value="20">
+							<div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div>
+							<div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div>
+							<div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div>
+							<div class="tyre-wear-v2__child tyre-wear-v2__child--c4"></div>
+							<div class="tyre-wear-v2__child tyre-wear-v2__child--c5 tyre-wear-v2__child--w6"></div>
+							<div class="tyre-wear-v2__child tyre-wear-v2__child--c6 tyre-wear-v2__child--w11"></div>
+						</div>
+				</div>
+				<div class="d-flex justify-content-center align-items-center">
+					<span class="weather-toggle">
+						<div class="weather-toggle__options">
+							<div>Tempo</div>
+						</div>
+						<label class="weather-toggle__label" title="Tempo">
+							Tempo
+							<input type="radio" name="weather_help_toggle" value="sun" class="weather-toggle__radio" checked="">
+						</label>
+						<label class="weather-toggle__label" title="Tempo">
+							Tempo
+							<input type="radio" name="weather_help_toggle" value="rain" class="weather-toggle__radio">
+						</label>
+					</span>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>			</div>
+			<div class="col-12 col-sm-7 col-md-7 col-xl-4 px-2">
+
+<table class="table table--primary table--form table--overflow">
+	<caption data-icon="car">Carro</caption>
+	<tbody>
+				<tr>
+					<td class="table__input" colspan="9">
+						<button type="button" class="btn btn--secondary btn--sm dataCarUploadedButton" data-icon="database" data-data="{&quot;lvl&quot;:{&quot;chasis&quot;:6,&quot;engine&quot;:6,&quot;frontWing&quot;:6,&quot;rearWing&quot;:6,&quot;underbody&quot;:6,&quot;sidepods&quot;:6,&quot;cooling&quot;:5,&quot;gearbox&quot;:6,&quot;brakes&quot;:6,&quot;suspension&quot;:6,&quot;electronics&quot;:5},&quot;wear&quot;:{&quot;chasis&quot;:18,&quot;engine&quot;:0,&quot;frontWing&quot;:29,&quot;rearWing&quot;:29,&quot;underbody&quot;:15,&quot;sidepods&quot;:0,&quot;cooling&quot;:32,&quot;gearbox&quot;:41,&quot;brakes&quot;:47,&quot;suspension&quot;:0,&quot;electronics&quot;:32}}">Carregar do banco de dados</button>
+					</td>
+				</tr>
+				<tr>
+					<th class="none"></th>
+					<th>Nível</th>
+
+						<th colspan="2">%</th>
+
+
+				</tr>
+
+					<tr>
+						<th>Carroçaria</th>
+						<td class="table__input">
+							<input type="text" name="chasis_lvl" id="car_chasis_lvl" value="3" class="input input--short" tabindex="18" aria-label="Carroçaria" data-uploaded="6" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="chasis_wear" id="car_chasis_wear" value="21" class="input input--short" tabindex="29" aria-label="Carroçaria" data-uploaded="18" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">63</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Motor</th>
+						<td class="table__input">
+							<input type="text" name="engine_lvl" id="car_engine_lvl" value="4" class="input input--short" tabindex="19" aria-label="Motor" data-uploaded="6" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="engine_wear" id="car_engine_wear" value="20" class="input input--short" tabindex="30" aria-label="Motor" data-uploaded="0" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">71</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Asa dianteira</th>
+						<td class="table__input">
+							<input type="text" name="frontWing_lvl" id="car_frontWing_lvl" value="3" class="input input--short" tabindex="20" aria-label="Asa dianteira" data-uploaded="6" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="frontWing_wear" id="car_frontWing_wear" value="33" class="input input--short" tabindex="31" aria-label="Asa dianteira" data-uploaded="29" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">59</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Asa traseira</th>
+						<td class="table__input">
+							<input type="text" name="rearWing_lvl" id="car_rearWing_lvl" value="3" class="input input--short" tabindex="21" aria-label="Asa traseira" data-uploaded="6" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="rearWing_wear" id="car_rearWing_wear" value="33" class="input input--short" tabindex="32" aria-label="Asa traseira" data-uploaded="29" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">64</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Fundo plano</th>
+						<td class="table__input">
+							<input type="text" name="underbody_lvl" id="car_underbody_lvl" value="3" class="input input--short" tabindex="22" aria-label="Fundo plano" data-uploaded="6" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="underbody_wear" id="car_underbody_wear" value="17" class="input input--short" tabindex="33" aria-label="Fundo plano" data-uploaded="15" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">54</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Laterais</th>
+						<td class="table__input">
+							<input type="text" name="sidepods_lvl" id="car_sidepods_lvl" value="3" class="input input--short" tabindex="23" aria-label="Laterais" data-uploaded="6" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="sidepods_wear" id="car_sidepods_wear" value="24" class="input input--short" tabindex="34" aria-label="Laterais" data-uploaded="0" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">58</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Radiador</th>
+						<td class="table__input">
+							<input type="text" name="cooling_lvl" id="car_cooling_lvl" value="3" class="input input--short" tabindex="24" aria-label="Radiador" data-uploaded="5" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="cooling_wear" id="car_cooling_wear" value="14" class="input input--short" tabindex="35" aria-label="Radiador" data-uploaded="32" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">31</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Caixa de Velocidades</th>
+						<td class="table__input">
+							<input type="text" name="gearbox_lvl" id="car_gearbox_lvl" value="3" class="input input--short" tabindex="25" aria-label="Caixa de Velocidades" data-uploaded="6" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="gearbox_wear" id="car_gearbox_wear" value="21" class="input input--short" tabindex="36" aria-label="Caixa de Velocidades" data-uploaded="41" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">64</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Travões</th>
+						<td class="table__input">
+							<input type="text" name="brakes_lvl" id="car_brakes_lvl" value="4" class="input input--short" tabindex="26" aria-label="Travões" data-uploaded="6" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="brakes_wear" id="car_brakes_wear" value="23" class="input input--short" tabindex="37" aria-label="Travões" data-uploaded="47" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">68</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Suspensão</th>
+						<td class="table__input">
+							<input type="text" name="suspension_lvl" id="car_suspension_lvl" value="3" class="input input--short" tabindex="27" aria-label="Suspensão" data-uploaded="6" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="suspension_wear" id="car_suspension_wear" value="37" class="input input--short" tabindex="38" aria-label="Suspensão" data-uploaded="0" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item car-wear-item--warning">
+		<div class="car-wear-item__wear">84</div>
+	</div>
+								</td>
+
+
+					</tr>
+					<tr>
+						<th>Eletrónica</th>
+						<td class="table__input">
+							<input type="text" name="electronics_lvl" id="car_electronics_lvl" value="3" class="input input--short" tabindex="28" aria-label="Eletrónica" data-uploaded="5" data-uploaded-ok="">
+						</td>
+
+							<td class="table__input">
+								<input type="text" name="electronics_wear" id="car_electronics_wear" value="17" class="input input--short" tabindex="39" aria-label="Eletrónica" data-uploaded="32" data-uploaded-ok="">
+							</td>
+
+								<td class="table__input">
+
+
+	<div class="car-wear-item ">
+		<div class="car-wear-item__wear">32</div>
+	</div>
+								</td>
+
+
+					</tr>
+				
+
+					<tr>
+						<td class="none"></td>
+						<td class="table__input">
+							<button type="button" class="btn btn--secondary btn--sm carAll1Button">Nível 1</button>
+						</td>
+							<td class="table__input">
+								<button type="button" class="btn btn--secondary btn--sm carWearAll0Button">0%</button>
+							</td>
+					</tr>
+	</tbody>
+</table>
+<table class="table table--primary table--form">
+	<caption data-icon="risks">Riscos</caption>
+	<tbody>
+				<tr>
+					<th>Ultrapassagem</th>
+					<td class="table__input">
+						<input type="text" name="riskOvertake" id="riskOvertake" value="30" class="input input--short" tabindex="73" aria-label="Ultrapassagem">
+					</td>
+				</tr>
+				<tr>
+					<th>Defesa</th>
+					<td class="table__input">
+						<input type="text" name="riskDefend" id="riskDefend" value="10" class="input input--short" tabindex="74" aria-label="Defesa">
+					</td>
+				</tr>
+				<tr>
+					<th>Limpa</th>
+					<td class="table__input">
+						<input type="text" name="riskClear" id="riskClear" value="30" class="input input--short" tabindex="75" aria-label="Limpa">
+					</td>
+				</tr>
+				<tr>
+					<th>Limpa (molhado)</th>
+					<td class="table__input">
+						<input type="text" name="riskClearWet" id="riskClearWet" value="0" class="input input--short" tabindex="76" aria-label="Limpa (molhado)">
+					</td>
+				</tr>
+				<tr>
+					<th>Falha</th>
+					<td class="table__input">
+						<input type="text" name="riskMalfunction" id="riskMalfunction" value="0" class="input input--short" tabindex="77" aria-label="Falha">
+					</td>
+				</tr>
+
+				<tr>
+					<td class="none"></td>
+					<td class="table__input">
+						<button type="button" class="btn btn--secondary btn--sm risksAll0Button">0%</button>
+					</td>
+				</tr>
+	</tbody>
+</table>	<table class="table table--secondary">
+		<caption data-icon="driverEnergy">Energia do piloto</caption>
+		<tbody>
+			<tr>
+				<th>Probabilidade</th>
+				<th>Energia após a corrida</th>
+			</tr>
+				<tr>
+					<th>34 %</th>
+					<td class="text-center" data-icon="">
+							23 - 29
+					</td>
+				</tr>
+				<tr>
+					<th>51 %</th>
+					<td class="text-center" data-icon="">
+							21 - 31
+					</td>
+				</tr>
+				<tr>
+					<th>87 %</th>
+					<td class="text-center" data-icon="">
+							16 - 36
+					</td>
+				</tr>
+				<tr>
+					<th>97+ %</th>
+					<td class="text-center" data-icon="">
+							6 - 46
+					</td>
+				</tr>
+		</tbody>
+	</table>
+			</div>
+			<div class="col-12 col-xl-5">
+				<div class="row">
+					<div class="col-12 col-md-7 col-xl-12 px-2">
+
+<table class="table table--primary table--form">
+		<caption data-icon="weather">Tempo</caption>
+	<tbody>
+		<tr>
+			<th class="none">
+					<button type="button" class="btn btn--secondary btn--sm dataWeatherUploadedButton" data-icon="database" data-data="{&quot;Q1&quot;:{&quot;temp&quot;:38,&quot;hum&quot;:88,&quot;isRain&quot;:false},&quot;Q2&quot;:{&quot;temp&quot;:41,&quot;hum&quot;:89,&quot;isRain&quot;:false},&quot;race&quot;:{&quot;temp&quot;:41,&quot;hum&quot;:91}}"></button>
+			</th>
+			<th data-icon="temperature">Temperatura</th>
+
+				<th data-icon="humidity">Humidade</th>
+				<th data-icon="weather">Tempo</th>
+		</tr>
+					<tr>
+						<th>Q 1</th>
+						<td class="table__input">
+							<input size="3" type="text" id="Q1_temp" name="Q1_temp" value="38" class="input input--short" tabindex="78" aria-label="Q 1" data-uploaded="38" data-uploaded2="38" data-uploaded-ok="OK" data-warning-min="38" data-warning-max="38" data-warning-show="">
+						</td>
+							<td class="table__input">
+							</td>
+							<td class="table__input">
+<div class="d-flex justify-content-center align-items-center">
+	<span class="weather-toggle">
+		<div class="weather-toggle__options">
+			<div>Sol</div>
+			<div>Chuva</div>
+		</div>
+		<label class="weather-toggle__label" title="Chuva">
+			Sol
+			<input type="radio" name="Q1_weather" value="sun" id="weather-toggle__yes-Q1_weather" class="weather-toggle__radio" data-warning="" checked="">
+		</label>
+		<label class="weather-toggle__label" title="Sol">
+			Chuva
+			<input type="radio" name="Q1_weather" value="rain" id="weather-toggle__no-Q1_weather" class="weather-toggle__radio" data-warning="OK">
+		</label>
+	</span>
+</div>							</td>
+					</tr>
+					<tr>
+						<th>Q 2</th>
+						<td class="table__input">
+							<input size="3" type="text" id="Q2_temp" name="Q2_temp" value="41" class="input input--short" tabindex="79" aria-label="Q 2" data-uploaded="41" data-uploaded2="41" data-uploaded-ok="OK" data-warning-min="41" data-warning-max="41" data-warning-show="">
+						</td>
+							<td class="table__input">
+							</td>
+							<td class="table__input">
+<div class="d-flex justify-content-center align-items-center">
+	<span class="weather-toggle">
+		<div class="weather-toggle__options">
+			<div>Sol</div>
+			<div>Chuva</div>
+		</div>
+		<label class="weather-toggle__label" title="Chuva">
+			Sol
+			<input type="radio" name="Q2_weather" value="sun" id="weather-toggle__yes-Q2_weather" class="weather-toggle__radio" data-warning="" checked="">
+		</label>
+		<label class="weather-toggle__label" title="Sol">
+			Chuva
+			<input type="radio" name="Q2_weather" value="rain" id="weather-toggle__no-Q2_weather" class="weather-toggle__radio" data-warning="OK">
+		</label>
+	</span>
+</div>							</td>
+					</tr>
+					<tr>
+						<th>Corrida</th>
+						<td class="table__input">
+							<input size="3" type="text" id="race_temp" name="race_temp" value="41" class="input input--short" tabindex="80" aria-label="Corrida" data-uploaded="38" data-uploaded2="44" data-uploaded-ok="OK" data-warning-min="38" data-warning-max="44" data-warning-show="">
+						</td>
+							<td class="table__input">
+									<input size="3" type="text" id="race_hum" name="race_hum" value="91" class="input input--short" tabindex="81" aria-label="Corrida" data-uploaded="85" data-uploaded2="97" data-uploaded-ok="OK" data-warning-min="85" data-warning-max="97" data-warning-show="">
+							</td>
+							<td class="table__input">
+<div class="d-flex justify-content-center align-items-center">
+	<span class="weather-toggle">
+		<div class="weather-toggle__options">
+			<div>Sol</div>
+			<div>Chuva</div>
+		</div>
+		<label class="weather-toggle__label" title="Chuva">
+			Sol
+			<input type="radio" name="race_weather" value="sun" id="weather-toggle__yes-race_weather" class="weather-toggle__radio" data-warning="" checked="">
+		</label>
+		<label class="weather-toggle__label" title="Sol">
+			Chuva
+			<input type="radio" name="race_weather" value="rain" id="weather-toggle__no-race_weather" class="weather-toggle__radio" data-warning="">
+		</label>
+	</span>
+</div>							</td>
+					</tr>
+
+				<tr>
+					<th colspan="4" data-icon="weather">Previsão de Tempo</th>
+				</tr>
+			<tr>
+				<th><span class="text-nowrap">Treino</span> / <span class="text-nowrap">Q 1</span></th>
+				<td class="text-center">38°C</td>
+					<td class="text-center">88%</td>
+					<td class="text-center none">
+							<div class="d-flex align-items-center justify-content-center">
+									<img src="/images/sun.gif" width="16px" height="16px" alt="weather">
+							</div>
+					</td>
+			</tr>
+			<tr>
+				<th><span class="text-nowrap">Q 2</span> / <span class="text-nowrap">Começar</span></th>
+				<td class="text-center">41°C</td>
+					<td class="text-center">89%</td>
+					<td class="text-center none">
+							<div class="d-flex align-items-center justify-content-center">
+									<img src="/images/sun.gif" width="16px" height="16px" alt="weather">
+							</div>
+					</td>
+			</tr>
+			<tr>
+				<th class="none"></th>
+				<th data-icon="temperature">Temperatura</th>
+
+					<th data-icon="humidity">Humidade</th>
+					<th data-icon="weather">Chuva</th>
+			</tr>
+			<tr>
+				<th>Começar - 0h30m</th>
+				<td class="text-center">40°C - 44°C</td>
+					<td class="text-center">87% - 97%</td>
+					<td class="text-center">50% - 60%</td>
+			</tr>
+			<tr>
+				<th>0h30m - 1h</th>
+				<td class="text-center">40°C - 44°C</td>
+					<td class="text-center">87% - 95%</td>
+					<td class="text-center">50% - 60%</td>
+			</tr>
+			<tr>
+				<th>1h - 1h30m</th>
+				<td class="text-center">40°C - 44°C</td>
+					<td class="text-center">88% - 97%</td>
+					<td class="text-center">55% - 65%</td>
+			</tr>
+			<tr>
+				<th>1h30m - 2h</th>
+				<td class="text-center">38°C - 41°C</td>
+					<td class="text-center">85% - 92%</td>
+					<td class="text-center">40% - 50%</td>
+			</tr>
+	</tbody>
+</table>					</div>
+					<div class="col-12 col-md-5 col-xl-12 px-2">
+
+<table class="table table--primary table--form">
+	<caption data-icon="circuit">Circuito de corrida - Informações</caption>
+	<tbody>
+			<tr>
+				<th colspan="4">
+					<div class="d-flex align-items-center justify-content-center font-weight-bold">
+		<div class="flag flag--wave mr-2">
+			<img src="/images/flags/us.svg" height="16px" width="28px" title="Indianapolis (United States)">
+		</div>
+						Indianapolis (United States)
+					</div>
+				</th>
+			</tr>
+				<tr>
+					<th>Contagem regressiva da corrida</th>
+					<td colspan="3">
+						<div id="countdownToRace" data-date="2026-09-15 16:30:00 UTC" class="">16:06:45</div>
+					</td>
+				</tr>
+			<tr>
+				<th>Voltas</th>
+				<td colspan="3">
+					73 (306.6 km)
+				</td>
+			</tr>
+				<tr>
+					<th>Ligação</th>
+					<td colspan="3">
+						<a href="https://www.gpro.net/gb/TrackDetails.asp?id=16" target="_blank" rel="noreferrer noopener">Circuito de corrida GPRO</a>
+					</td>
+				</tr>
+					<tr>
+						<th>Ultrapassagens</th>
+						<td colspan="3">Fáceis</td>
+					</tr>
+			<tr>
+				<td colspan="4" class="table__input">
+					<button type="submit" class="btn btn--primary btn--lg btn--block" data-icon="calculator">Calcular</button>
+				</td>
+			</tr>
+	</tbody>
+</table>
+
+
+<table class="table table--secondary table--form mb-8">
+	<caption data-icon="carSetup">Configuração do carro</caption>
+	<tbody>
+			<tr>
+				<td class="none"></td>
+							<th>
+								Q 1
+							</th>
+							<th>
+								Q 2
+							</th>
+							<th>
+								Corrida
+							</th>
+			</tr>
+			<tr>
+				<th data-icon="temperature" class="only-icon"></th>
+						<td>
+							<div class="none d-flex align-items-center justify-content-center">
+								38°C
+							</div>
+						</td>
+						<td>
+							<div class="none d-flex align-items-center justify-content-center">
+								41°C
+							</div>
+						</td>
+						<td>
+							<div class="none d-flex align-items-center justify-content-center">
+								41°C
+							</div>
+						</td>
+			</tr>
+			<tr>
+				<th data-icon="weather" class="only-icon"></th>
+						<td class="none">
+							<div class="d-flex align-items-center justify-content-center">
+								<img src="/images/sun.gif" width="20px" height="20px" alt="weather">
+							</div>
+						</td>
+						<td class="none">
+							<div class="d-flex align-items-center justify-content-center">
+								<img src="/images/sun.gif" width="20px" height="20px" alt="weather">
+							</div>
+						</td>
+						<td class="none">
+							<div class="d-flex align-items-center justify-content-center">
+								<img src="/images/sun.gif" width="20px" height="20px" alt="weather">
+							</div>
+						</td>
+			</tr>
+
+	<tr>
+		<th>Asa dianteira</th>
+				<td class="text-center font-weight-bold">
+					219
+				</td>
+				<td class="text-center font-weight-bold">
+					231
+				</td>
+				<td class="text-center font-weight-bold">
+					231
+				</td>
+	</tr>
+	<tr>
+		<th>Asa traseira</th>
+				<td class="text-center font-weight-bold">
+					467
+				</td>
+				<td class="text-center font-weight-bold">
+					483
+				</td>
+				<td class="text-center font-weight-bold">
+					483
+				</td>
+	</tr>
+	<tr>
+		<th>Motor</th>
+				<td class="text-center font-weight-bold">
+					708
+				</td>
+				<td class="text-center font-weight-bold">
+					698
+				</td>
+				<td class="text-center font-weight-bold">
+					698
+				</td>
+	</tr>
+	<tr>
+		<th>Travões</th>
+				<td class="text-center font-weight-bold">
+					524
+				</td>
+				<td class="text-center font-weight-bold">
+					542
+				</td>
+				<td class="text-center font-weight-bold">
+					542
+				</td>
+	</tr>
+	<tr>
+		<th>Caixa de Velocidades</th>
+				<td class="text-center font-weight-bold">
+					452
+				</td>
+				<td class="text-center font-weight-bold">
+					440
+				</td>
+				<td class="text-center font-weight-bold">
+					440
+				</td>
+	</tr>
+	<tr>
+		<th>Suspensão</th>
+				<td class="text-center font-weight-bold">
+					509
+				</td>
+				<td class="text-center font-weight-bold">
+					491
+				</td>
+				<td class="text-center font-weight-bold">
+					491
+				</td>
+	</tr>
+	</tbody>
+</table>					</div>
+				</div>
+			</div>
+		</div>
+
+	</form>
+
+	<div class="row mb-8" id="strategyContainer"><div class="col-12 col-xl-10 col-xxl-8"><table class="strategy-table flex-grow-1"><caption data-icon="strategy">Estratégia</caption><tbody><tr><th rowspan="2" class="none"></th><td class="strategy-table__empty-vertical"></td> <th colspan="2"><div class="d-flex justify-content-center align-items-center"><img alt="" src="/images/tyre/extraSoft.svg" width="15" height="15"><!----> <span class="px-1">Super macios</span></div></th><td class="strategy-table__empty-vertical"></td> <th colspan="2"><div class="d-flex justify-content-center align-items-center"><img alt="" src="/images/tyre/soft.svg" width="15" height="15"><!----> <span class="px-1">Macia</span></div></th><td class="strategy-table__empty-vertical"></td> <th colspan="2"><div class="d-flex justify-content-center align-items-center"><img alt="" src="/images/tyre/medium.svg" width="15" height="15"><!----> <span class="px-1">Médio</span></div></th><td class="strategy-table__empty-vertical"></td> <th colspan="2" class="strategy-table__best-strategy"><div class="d-flex justify-content-center align-items-center"><img alt="" src="/images/tyre/hard.svg" width="15" height="15"><!----> <span class="px-1">Difíceis</span></div></th><!----></tr><tr><td class="strategy-table__empty-vertical"></td> <th>Volta</th> <th>Combustível</th><td class="strategy-table__empty-vertical"></td> <th>Volta</th> <th>Combustível</th><td class="strategy-table__empty-vertical"></td> <th>Volta</th> <th>Combustível</th><td class="strategy-table__empty-vertical"></td> <th>Volta</th> <th>Combustível</th></tr><!----><tr><th class="no-scroll">Começar</th><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->0<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">51</div> <small>(50)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->0<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">64</div> <small>(63)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->0<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">84</div> <small>(82)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->0<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">124</div> <small>(122)</small><!----></td><!----><!----></tr> <tr><th class="none"></th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="0" data-tyre="extraSoft"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">15</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="0" data-tyre="extraSoft"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/extraSoft.svg" width="15" height="15" title="Super macios"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="1"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <!----> <!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="extraSoft_0" data-tyre="extraSoft" data-stint-id="0"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="extraSoft_0" data-tyre="extraSoft" data-stint-id="0"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="0" data-tyre="soft"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">19</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="0" data-tyre="soft"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/soft.svg" width="15" height="15" title="Macia"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="2"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div><!----> <!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="soft_0" data-tyre="soft" data-stint-id="0"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="soft_0" data-tyre="soft" data-stint-id="0"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="0" data-tyre="medium"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">25</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="0" data-tyre="medium"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/medium.svg" width="15" height="15" title="Médio"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="3"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c4"></div><!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="medium_0" data-tyre="medium" data-stint-id="0"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="medium_0" data-tyre="medium" data-stint-id="0"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="0" data-tyre="hard"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">37</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="0" data-tyre="hard"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/hard.svg" width="15" height="15" title="Difíceis"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="1"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <!----> <!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="hard_0" data-tyre="hard" data-stint-id="0"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="hard_0" data-tyre="hard" data-stint-id="0"></label></span><!----></div><!----></td><!----><!----></tr><tr><th class="no-scroll">PIT 1</th><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->15<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">51</div> <small>(50)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->19<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">60</div> <small>(59)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->25<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">81</div> <small>(79)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->37<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">120</div> <small>(118)</small><!----></td><!----><!----></tr> <tr><th class="none"></th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="1" data-tyre="extraSoft"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">15</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="1" data-tyre="extraSoft"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/extraSoft.svg" width="15" height="15" title="Super macios"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="1"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <!----> <!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="extraSoft_1" data-tyre="extraSoft" data-stint-id="1"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="extraSoft_1" data-tyre="extraSoft" data-stint-id="1"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="1" data-tyre="soft"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">18</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="1" data-tyre="soft"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/soft.svg" width="15" height="15" title="Macia"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="3"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c4"></div><!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="soft_1" data-tyre="soft" data-stint-id="1"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="soft_1" data-tyre="soft" data-stint-id="1"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="1" data-tyre="medium"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">24</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="1" data-tyre="medium"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/medium.svg" width="15" height="15" title="Médio"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="3"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c4"></div><!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="medium_1" data-tyre="medium" data-stint-id="1"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="medium_1" data-tyre="medium" data-stint-id="1"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="1" data-tyre="hard"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">36</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="1" data-tyre="hard"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/hard.svg" width="15" height="15" title="Difíceis"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="1"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <!----> <!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="hard_1" data-tyre="hard" data-stint-id="1"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="hard_1" data-tyre="hard" data-stint-id="1"></label></span><!----></div><!----></td><!----><!----></tr><tr><th class="no-scroll">PIT 2</th><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->30<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">51</div> <small>(50)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->37<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">60</div> <small>(59)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->49<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">81</div> <small>(79)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="2"><!----><span class="strategy-table__finish"></span><!----></td> <td class="d-none"><!----></td><!----><!----></tr> <tr><th class="none"></th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="2" data-tyre="extraSoft"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">15</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="2" data-tyre="extraSoft"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/extraSoft.svg" width="15" height="15" title="Super macios"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="1"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <!----> <!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="extraSoft_2" data-tyre="extraSoft" data-stint-id="2"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="extraSoft_2" data-tyre="extraSoft" data-stint-id="2"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="2" data-tyre="soft"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">18</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="2" data-tyre="soft"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/soft.svg" width="15" height="15" title="Macia"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="3"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c4"></div><!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="soft_2" data-tyre="soft" data-stint-id="2"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="soft_2" data-tyre="soft" data-stint-id="2"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="2" data-tyre="medium"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">24</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="2" data-tyre="medium"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/medium.svg" width="15" height="15" title="Médio"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="3"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c4"></div><!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="medium_2" data-tyre="medium" data-stint-id="2"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="medium_2" data-tyre="medium" data-stint-id="2"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><!----></tr><tr><th class="no-scroll">PIT 3</th><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->45<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">47</div> <small>(46)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->55<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">60</div> <small>(59)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="2"><!----><span class="strategy-table__finish"></span><!----></td> <td class="d-none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="none" colspan="2"><!----></td> <td class="d-none"><!----></td><!----><!----></tr> <tr><th class="none"></th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="3" data-tyre="extraSoft"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">14</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="3" data-tyre="extraSoft"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/extraSoft.svg" width="15" height="15" title="Super macios"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="3"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c4"></div><!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="extraSoft_3" data-tyre="extraSoft" data-stint-id="3"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="extraSoft_3" data-tyre="extraSoft" data-stint-id="3"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="3" data-tyre="soft"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">18</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="3" data-tyre="soft"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/soft.svg" width="15" height="15" title="Macia"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="3"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c4"></div><!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="soft_3" data-tyre="soft" data-stint-id="3"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="soft_3" data-tyre="soft" data-stint-id="3"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><!----></tr><tr><th class="no-scroll">PIT 4</th><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="1"><!---->59<!----></td> <td class="strategy-table__fuel"><div class="font-weight-bold">47</div> <small>(46)</small><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="2"><!----><span class="strategy-table__finish"></span><!----></td> <td class="d-none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="none" colspan="2"><!----></td> <td class="d-none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="none" colspan="2"><!----></td> <td class="d-none"><!----></td><!----><!----></tr> <tr><th class="none"></th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="strategy-table__select-laps"><div><button class="strategy-table__button-wrapper" data-change="-1" data-stint-id="4" data-tyre="extraSoft"><span class="strategy-table__button">-</span></button> <div class="strategy-table__laps">14</div> <button class="strategy-table__button-wrapper" data-change="+1" data-stint-id="4" data-tyre="extraSoft"><span class="strategy-table__button">+</span></button></div> <div class="strategy-table__tyre-wear-wrapper"><div class="strategy-table__tyre-compound"><img alt="" src="/images/tyre/extraSoft.svg" width="15" height="15" title="Super macios"><!----></div> <!----><div class="tyre-wear-v2 mt-2 mb-2" data-value="3"><div class="tyre-wear-v2__child tyre-wear-v2__child--c1"></div> <div class="tyre-wear-v2__child tyre-wear-v2__child--c2"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c3"></div><!----> <div class="tyre-wear-v2__child tyre-wear-v2__child--c4"></div><!----> <!----> <!----></div><!----></div> <div class="d-flex justify-content-center align-items-center"><span class="weather-toggle"><div class="weather-toggle__options"><div>Sol</div> <div>Chuva</div></div> <label class="weather-toggle__label" title="Chuva">Sol <input type="radio" value="sun" class="weather-toggle__radio" name="extraSoft_4" data-tyre="extraSoft" data-stint-id="4"></label> <label class="weather-toggle__label" title="Sol">Chuva <input type="radio" value="rain" class="weather-toggle__radio" name="extraSoft_4" data-tyre="extraSoft" data-stint-id="4"></label></span><!----></div><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><!----></tr><tr><th class="no-scroll">PIT 5</th><td class="strategy-table__empty-vertical"></td> <td class="strategy-table__pit-lap" colspan="2"><!----><span class="strategy-table__finish"></span><!----></td> <td class="d-none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="none" colspan="2"><!----></td> <td class="d-none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="none" colspan="2"><!----></td> <td class="d-none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td class="none" colspan="2"><!----></td> <td class="d-none"><!----></td><!----><!----></tr> <tr><th class="none"></th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="none"><!----></td><!----><!----></tr><!----><tr><th class="no-scroll">Voltas</th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center strategy-table__border-transparent">73 / 73</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center strategy-table__border-transparent">73 / 73</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center strategy-table__border-transparent">73 / 73</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center strategy-table__border-transparent">73 / 73</td><!----></tr><tr><th colspan="2" class="none"></th><th colspan="11">Perda s</th></tr><tr><th class="no-scroll">Combustível</th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">25.2 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">31.65 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">43.54 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">70.09 s</td><!----></tr><tr><th class="no-scroll">Pneu</th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">0 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">6.44 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">12.88 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">19.32 s</td><!----></tr><tr><th class="no-scroll">PIT</th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">198 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">148.5 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">99 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">49.5 s</td><!----></tr><tr><th class="no-scroll">Riscos</th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">-81.03 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">-81.03 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">-81.03 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">-81.03 s</td><!----></tr><tr><th class="no-scroll">Total perdido</th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">142.17 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">105.56 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center">74.39 s</td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="text-center strategy-table__best-strategy">57.88 s</td><!----></tr><!----><tr><th colspan="2" class="none"></th><th colspan="11">Riscos</th></tr> <tr><th class="no-scroll"><div>Limpa</div> <div class="strategy-table__hide-width">Limpa (molhado)</div></th><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="table__input"><button class="strategy-table__button-wrapper" data-weather="dry" data-value="-1" data-tyre="extraSoft"><span class="strategy-table__button">-</span></button><!----> <div class="strategy-table__risks">30</div> <button class="strategy-table__button-wrapper" data-weather="dry" data-value="1" data-tyre="extraSoft"><span class="strategy-table__button">+</span></button><!----></td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="table__input"><button class="strategy-table__button-wrapper" data-weather="dry" data-value="-1" data-tyre="soft"><span class="strategy-table__button">-</span></button><!----> <div class="strategy-table__risks">30</div> <button class="strategy-table__button-wrapper" data-weather="dry" data-value="1" data-tyre="soft"><span class="strategy-table__button">+</span></button><!----></td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="table__input"><button class="strategy-table__button-wrapper" data-weather="dry" data-value="-1" data-tyre="medium"><span class="strategy-table__button">-</span></button><!----> <div class="strategy-table__risks">30</div> <button class="strategy-table__button-wrapper" data-weather="dry" data-value="1" data-tyre="medium"><span class="strategy-table__button">+</span></button><!----></td><td class="strategy-table__empty-vertical"></td> <td colspan="2" class="table__input"><button class="strategy-table__button-wrapper" data-weather="dry" data-value="-1" data-tyre="hard"><span class="strategy-table__button">-</span></button><!----> <div class="strategy-table__risks">30</div> <button class="strategy-table__button-wrapper" data-weather="dry" data-value="1" data-tyre="hard"><span class="strategy-table__button">+</span></button><!----></td><!----></tr><!----> <!----><!----><tr><td colspan="13" class="table__input"><!----><button class="btn btn--sm btn--secondary mx-2">Salvar estratégia para mais tarde</button> <!----><!----></td></tr><!----></tbody></table></div> <div class="col-12 col-xl-4 col-xxl-4"><table class="strategy-table strategy-table--lap-by-lap"><caption data-icon="strategy">Diferença horária</caption><tbody><tr><th>Volta</th><th class="table__input"><img alt="" src="/images/tyre/extraSoft.svg" width="20" height="20" title="Super macios"><!----></th><th class="table__input"><img alt="" src="/images/tyre/soft.svg" width="20" height="20" title="Macia"><!----></th><th class="table__input"><img alt="" src="/images/tyre/medium.svg" width="20" height="20" title="Médio"><!----></th><th class="table__input"><img alt="" src="/images/tyre/hard.svg" width="20" height="20" title="Difíceis"><!----></th><!----></tr><tr class="strategy-table__tr-fixed-5"><th>1</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">1.7</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>2</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0.6</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">1.5</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">3.4</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>3</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">2.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">5</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>4</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">1.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">6.6</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>5</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">1.5</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">3.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">8.3</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>6</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">1.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">4.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">9.8</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>7</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">2.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">5.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">11.4</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>8</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">2.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">5.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">12.9</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>9</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">2.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">6.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">14.5</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>10</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">2.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">7.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">16</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>11</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">3.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">7.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.4</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>12</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">3.5</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">8.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.9</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>13</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">3.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">9.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">20.3</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>14</th><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">9.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">21.7</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>15</th><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">45.2</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">6.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.9</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>16</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">45.7</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">6.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">20</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>17</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">46.1</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">6.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">21.1</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>18</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">46.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">7.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">22.1</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>19</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">39.5</span></div></td><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">42</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">15.7</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>20</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">39.6</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">42.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">16.4</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>21</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">39.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">43.1</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.1</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>22</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">39.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">43.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.8</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>23</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">39.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">44</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.5</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>24</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">39.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">44.5</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">19.1</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>25</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">20.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">25.2</span></div></td><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">29.7</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>26</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">19.5</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">25</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">30.3</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>27</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">24.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">30.9</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>28</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">24.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">31.5</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>29</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">24.5</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">32</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>30</th><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">66.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">24.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">32.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>31</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">66.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">24.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">33.1</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>32</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">67</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">24</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">33.7</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>33</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">67.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">23.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">34.2</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>34</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">67.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">23.6</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">34.7</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>35</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">67.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">23.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">35.1</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>36</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">67.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">23.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">35.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>37</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">31.4</span></div></td><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">36.5</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">13.4</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>38</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">31.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">36.7</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">15</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>39</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">30.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">36.9</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">16.6</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>40</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">30.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">37.2</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.1</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>41</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">30</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">37.4</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">19.6</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>42</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">29.6</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">37.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">21.1</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>43</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">29.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">37.8</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">22.6</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>44</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">28.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">38</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">24.1</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>45</th><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">78.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">38.2</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">25.5</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>46</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">78.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">38.4</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">26.9</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>47</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">78.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">38.5</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">28.3</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>48</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">79</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">38.7</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">29.6</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>49</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">48.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">7.9</span></div></td><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">18.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>50</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">47.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">6.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.5</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>51</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">46.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">5.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.4</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>52</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">45.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">4.6</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.3</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>53</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">44.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">3.5</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.2</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>54</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">43.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">2.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.1</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>55</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">42.2</span></div></td><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">50.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18.1</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>56</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">41.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">50.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">18</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>57</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">40.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">50.5</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.9</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>58</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">39.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">50.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.8</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>59</th><td class="px-1 strategy-table__warning "><div class="d-flex"><span>PIT</span><!----> <span class="flex-grow-1 text-center">88</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">50.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.7</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>60</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">87.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">50</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>61</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">87.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">49.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>62</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">87.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">49.6</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.5</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>63</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">86.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">49.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.4</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>64</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">86.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">49.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.3</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>65</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">86.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">49.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.2</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>66</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">86.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">48.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17.1</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>67</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">85.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">48.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">17</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>68</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">85.6</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">48.6</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">16.9</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>69</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">85.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">48.4</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">16.9</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>70</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">85.1</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">48.2</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">16.8</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>71</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">84.8</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">48</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">16.7</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>72</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">84.5</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">47.9</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">16.6</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><tr class="strategy-table__tr-fixed-5"><th>73</th><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">84.3</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">47.7</span></div></td><td class="px-1  "><div class="d-flex"><!----> <span class="flex-grow-1 text-center">16.5</span></div></td><td class="px-1  strategy-table__lowest-lap-time-lost"><div class="d-flex"><!----> <span class="flex-grow-1 text-center">0</span></div></td><!----></tr><!----></tbody></table></div></div>
+
+	<script>
+		window.strategyData = "{\"durabilityLaps\":{\"extraSoft\":16,\"soft\":21,\"medium\":29,\"hard\":38,\"rain\":56},\"durabilityLapsCtr\":{\"extraSoft\":{\"0\":17,\"10\":17,\"20\":16,\"30\":16,\"40\":16,\"50\":15,\"60\":15,\"70\":15,\"80\":15,\"90\":14,\"100\":14},\"soft\":{\"0\":23,\"10\":22,\"20\":21,\"30\":21,\"40\":20,\"50\":20,\"60\":19,\"70\":18,\"80\":18,\"90\":17,\"100\":17},\"medium\":{\"0\":32,\"10\":31,\"20\":30,\"30\":29,\"40\":28,\"50\":27,\"60\":26,\"70\":25,\"80\":24,\"90\":23,\"100\":22},\"hard\":{\"0\":43,\"10\":42,\"20\":40,\"30\":38,\"40\":37,\"50\":35,\"60\":34,\"70\":32,\"80\":31,\"90\":30,\"100\":29},\"rain\":{\"0\":56,\"10\":54,\"20\":52,\"30\":50,\"40\":48,\"50\":46,\"60\":44,\"70\":42,\"80\":41,\"90\":39,\"100\":38}},\"tyreLost\":6.44,\"tyreWearGraphicVersion2\":true,\"raceLaps\":73,\"allowRiskModify\":true,\"riskClear\":30,\"riskClearWet\":0,\"fuelConsumption\":{\"fuelAllDry\":239,\"fuelAllWet\":188,\"fuelAllDryWithBoost\":239,\"fuelAllWetWithBoost\":188,\"literLost\":0.01386,\"recommendedPlus\":2,\"fuelLostKoefs\":{\"koefPrimary\":0.010822510822510822,\"koefSecondary\":0.01386,\"koefTerciary\":117,\"koefQuartery\":154.1668208334875,\"koefBase\":0.6699346765221033,\"koefMinus\":0.5084255920263498,\"koefRain\":1.175},\"fuelByCtr\":{\"dry\":{\"0\":240,\"10\":239,\"20\":239,\"30\":239,\"40\":238,\"50\":238,\"60\":237,\"70\":237,\"80\":237,\"90\":236,\"100\":236},\"wet\":{\"0\":188,\"10\":187,\"20\":187,\"30\":187,\"40\":186,\"50\":186,\"60\":185,\"70\":185,\"80\":185,\"90\":184,\"100\":184}}},\"pitTime\":49.5,\"ctrLostLapDry\":-1.11,\"ctrLostLapWet\":-0,\"ctrLostLapByCtrDry\":{\"0\":0,\"10\":-0.37,\"20\":-0.74,\"30\":-1.11,\"40\":-1.48,\"50\":-1.85,\"60\":-2.22,\"70\":-2.59,\"80\":-2.96,\"90\":-3.33,\"100\":-3.7},\"ctrLostLapByCtrWet\":{\"0\":0,\"10\":-0.37,\"20\":-0.74,\"30\":-1.11,\"40\":-1.48,\"50\":-1.85,\"60\":-2.22,\"70\":-2.59,\"80\":-2.96,\"90\":-3.33,\"100\":-3.7},\"isRain\":false,\"seasonRace\":\"112-10\",\"boostLaps\":[]}";
+	</script>
+
+</div>
+
+
+	<script>
+		window.jsTranslations = "{\"DO_YOU_WANT_TO_CONTINUE\":\"Quer continuar?\",\"YES_CONTINUE\":\"Sim, continuar\",\"NO_GO_BACK\":\"N\\u00e3o, voltar\",\"tyre_extraSoft\":\"Super macios\",\"tyre_soft\":\"Macia\",\"tyre_medium\":\"M\\u00e9dio\",\"tyre_hard\":\"Dif\\u00edceis\",\"tyre_rain\":\"Chuva\",\"strategy\":\"Estrat\\u00e9gia\",\"lap\":\"Volta\",\"laps\":\"Voltas\",\"fuel\":\"Combust\\u00edvel\",\"start\":\"Come\\u00e7ar\",\"PIT\":\"PIT\",\"tyre\":\"Pneu\",\"totalLost\":\"Total perdido\",\"timeDifference\":\"Diferen\\u00e7a hor\\u00e1ria\",\"lostSeconds\":\"Perda s\",\"sun\":\"Sol\",\"rain\":\"Chuva\",\"risks\":\"Riscos\",\"riskClear\":\"Limpa\",\"riskClearWet\":\"Limpa (molhado)\",\"strategy_is_the_same_as_saved\":\"A estrat\\u00e9gia \\u00e9 a mesma que se salva\",\"save_strategy_for_later\":\"Salvar estrat\\u00e9gia para mais tarde\",\"apply_saved_strategy\":\"Aplicar estrat\\u00e9gia salva\",\"no_strategy_data_saved\":\"Nenhum dado estrat\\u00e9gico guardado\",\"strategy_successfully_applied\":\"Estrat\\u00e9gia aplicada com sucesso\",\"strategy_successfully_saved\":\"Estrat\\u00e9gia salva com sucesso\"}";
+	</script>
+</main>
+
+<footer class="footer">
+	© Pavel Sztefek
+</footer>
+
+		<script src="assets/js/app.js?v=496160389"></script>
+
+</body></html>

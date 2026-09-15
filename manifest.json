@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "GPRO2Tools",
+  "version": "1.0",
+  "description": "GPRO2Tools: extrai dados do piloto e do carro do GPRO e os cola no GPRO Tools.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "GPRO2Tools"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.gpro.net/*","*://*.gpro-tools.eu/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg: #f4f6f9;
+      --surface: #ffffff;
+      --surface-alt: #eef2f6;
+      --border: #dfe4ea;
+      --text: #1b2a41;
+      --text-muted: #64748b;
+      --brand: #1b365d;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --success: #15803d;
+      --success-hover: #166534;
+      --danger: #b91c1c;
+      --focus-ring: rgba(37, 99, 235, 0.45);
+      /* Cores de origem/destino */
+      --gpro: #7c3aed;
+      --gpro-soft: rgba(124, 58, 237, 0.12);
+      --tools: #0891b2;
+      --tools-soft: rgba(8, 145, 178, 0.12);
+      --radius: 8px;
+      --radius-sm: 6px;
+      --shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.10);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --surface: #1e293b;
+        --surface-alt: #273449;
+        --border: #334155;
+        --text: #e2e8f0;
+        --text-muted: #94a3b8;
+        --brand: #93c5fd;
+        --primary: #3b82f6;
+        --primary-hover: #60a5fa;
+        --success: #22c55e;
+        --success-hover: #4ade80;
+        --danger: #f87171;
+        --gpro: #a78bfa;
+        --gpro-soft: rgba(167, 139, 250, 0.18);
+        --tools: #22d3ee;
+        --tools-soft: rgba(34, 211, 238, 0.18);
+        --shadow: none;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      width: 344px;
+      margin: 0;
+      padding: 16px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.4;
+      color: var(--text);
+      background-color: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    header .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: var(--radius-sm);
+      background: var(--primary);
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--brand);
+      letter-spacing: -0.2px;
+    }
+
+    .legend {
+      display: flex;
+      gap: 14px;
+      margin: 0 0 14px 2px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .legend .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    .legend .dot.gpro { background: var(--gpro); }
+    .legend .dot.tools { background: var(--tools); }
+
+    /* Trilha de passos */
+    .flow { position: relative; }
+
+    .step {
+      position: relative;
+      display: flex;
+      gap: 12px;
+      padding-bottom: 14px;
+    }
+    /* Linha conectora vertical */
+    .step:not(:last-child)::before {
+      content: "";
+      position: absolute;
+      left: 12px;
+      top: 26px;
+      bottom: -2px;
+      width: 2px;
+      background: var(--border);
+    }
+
+    .step-marker {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 2px solid var(--border);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      z-index: 1;
+    }
+
+    .step-body { flex: 1; min-width: 0; }
+
+    .step-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 4px 0 8px;
+    }
+    .step-title {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .tag {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .tag.gpro { color: var(--gpro); background: var(--gpro-soft); }
+    .tag.tools { color: var(--tools); background: var(--tools-soft); }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid transparent;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 13.5px;
+      font-weight: 600;
+      font-family: inherit;
+      color: #fff;
+      transition: background-color 0.15s ease, transform 0.05s ease;
+    }
+    button:active { transform: translateY(1px); }
+    button:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 3px var(--focus-ring);
+    }
+    button svg { flex-shrink: 0; }
+
+    .btn-primary { background-color: var(--primary); }
+    .btn-primary:hover { background-color: var(--primary-hover); }
+
+    .btn-success { background-color: var(--success); }
+    .btn-success:hover { background-color: var(--success-hover); }
+
+    /* Segmented control para escolha de sessão */
+    .segmented {
+      display: flex;
+      gap: 2px;
+      padding: 3px;
+      margin: 0 0 8px;
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .segmented label {
+      flex: 1;
+      position: relative;
+      text-align: center;
+    }
+    .segmented input {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    .segmented span {
+      display: block;
+      padding: 6px 4px;
+      border-radius: var(--radius-sm);
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: background-color 0.15s ease, color 0.15s ease;
+      user-select: none;
+    }
+    .segmented label:hover span { color: var(--text); }
+    .segmented input:checked + span {
+      background: var(--surface);
+      color: var(--brand);
+      box-shadow: var(--shadow);
+    }
+    .segmented input:focus-visible + span {
+      box-shadow: 0 0 0 3px var(--focus-ring);
+    }
+
+    /* Status */
+    #status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 6px 0 14px;
+      padding: 10px 12px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--border);
+      border-radius: var(--radius-sm);
+      min-height: 40px;
+    }
+
+    /* Bloco de dados salvos */
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 10px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      user-select: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary .chevron {
+      transition: transform 0.2s ease;
+      color: var(--text-muted);
+    }
+    details[open] summary .chevron { transform: rotate(180deg); }
+    summary:focus-visible {
+      outline: none;
+      box-shadow: inset 0 0 0 2px var(--focus-ring);
+    }
+
+    pre {
+      margin: 0;
+      padding: 10px 12px;
+      background: var(--surface-alt);
+      border-top: 1px solid var(--border);
+      max-height: 200px;
+      overflow: auto;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 11px;
+      line-height: 1.5;
+      color: var(--text);
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="logo" aria-hidden="true">G2</span>
+    <h1>GPRO2Tools</h1>
+  </header>
+
+  <div class="legend" aria-hidden="true">
+    <span><span class="dot gpro"></span>GPRO</span>
+    <span><span class="dot tools"></span>GPRO Tools</span>
+  </div>
+
+  <ol class="flow">
+    <!-- Passo 1: extrair do GPRO -->
+    <li class="step">
+      <span class="step-marker">1</span>
+      <div class="step-body">
+        <div class="step-head">
+          <span class="step-title">Extrair do GPRO</span>
+          <span class="tag gpro">GPRO</span>
+        </div>
+        <div class="button-group">
+          <button id="btnExtract" type="button" class="btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Dados do Piloto
+          </button>
+          <button id="btnExtractCar" type="button" class="btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Dados do Carro
+          </button>
+        </div>
+      </div>
+    </li>
+
+    <!-- Passo 2: colar no GPRO Tools -->
+    <li class="step">
+      <span class="step-marker">2</span>
+      <div class="step-body">
+        <div class="step-head">
+          <span class="step-title">Colar no GPRO Tools</span>
+          <span class="tag tools">GPRO Tools</span>
+        </div>
+        <div class="button-group">
+          <button id="btnPaste" type="button" class="btn-success">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+            Colar Dados
+          </button>
+        </div>
+      </div>
+    </li>
+
+    <!-- Passo 3: extrair config do GPRO Tools -->
+    <li class="step">
+      <span class="step-marker">3</span>
+      <div class="step-body">
+        <div class="step-head">
+          <span class="step-title">Extrair Config da Corrida</span>
+          <span class="tag tools">GPRO Tools</span>
+        </div>
+        <div class="button-group">
+          <button id="btnExtractConfig" type="button" class="btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Config para Corrida
+          </button>
+        </div>
+      </div>
+    </li>
+
+    <!-- Passo 4: colar config no GPRO -->
+    <li class="step">
+      <span class="step-marker">4</span>
+      <div class="step-body">
+        <div class="step-head">
+          <span class="step-title">Colar Config no GPRO</span>
+          <span class="tag gpro">GPRO</span>
+        </div>
+        <fieldset class="segmented" id="configSelector" aria-label="Sessão de configuração">
+          <label>
+            <input type="radio" name="configSession" value="Q 1" checked>
+            <span>Q 1</span>
+          </label>
+          <label>
+            <input type="radio" name="configSession" value="Q 2">
+            <span>Q 2</span>
+          </label>
+          <label>
+            <input type="radio" name="configSession" value="Corrida">
+            <span>Corrida</span>
+          </label>
+        </fieldset>
+        <div class="button-group">
+          <button id="btnPasteConfigCorrida" type="button" class="btn-success">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
+            Colar Config para Corrida
+          </button>
+        </div>
+      </div>
+    </li>
+  </ol>
+
+  <div id="status" role="status" aria-live="polite">Comece pelo passo 1.</div>
+
+  <details>
+    <summary>
+      Dados salvos no storage
+      <svg class="chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </summary>
+    <pre id="output">Nenhum dado salvo ainda.</pre>
+  </details>
+
+  <script src="popup.js"></script>
+</body>
+</html>
